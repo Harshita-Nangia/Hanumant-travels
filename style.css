@@ -3,12 +3,12 @@
   margin:0;
   text-decoration: none;
   list-style: none;
-}
-body{
   overflow-x: hidden;
+
 }
 p{
   font-family: Oswald;
+  font-size: 18px;
 }
  h3{
   color: 131633;
@@ -45,6 +45,7 @@ nav{
   height: 100px;
   width: 100%;
   background:rgba(0,0,0,0.3);
+  overflow-x:hidden;
   position: fixed;
 
 }
@@ -112,9 +113,9 @@ nav #mobile_icon{
 @media (max-width:1200px) {
 
   nav #mobile_icon{
-    display: block;
+    display: inline;
   }
-   nav ul{
+  nav ul{
 
     position: fixed;
     width: 100%;
@@ -182,7 +183,7 @@ footer ul li a{
 
 @media(max-width: 800px){
   footer{
-    padding: 50px 15px;
+    padding: auto;
   }
 }
 
@@ -215,8 +216,14 @@ div.Cars-Image ul{
   margin-top: 5vh;
   margin-left:50px;
 }
+div.Cars-Image img{
+width:15vw;
+height:13vh;
+}
+
 div.Cars-Image li{
-  padding: 15px 30px 0px 0px;
+  padding: 15px 25px 0px 0px;
+
 
 }
 
@@ -244,7 +251,7 @@ About us
   background-color: #2196f3;
 }
 .about-bio{
-  width:65%;
+  width:80%;
   max-width: 800px;
   line-height: 2;
   margin-left: 20px;
@@ -256,17 +263,17 @@ About us
   background: #FFF;
   width: 100%;
   margin: 0px auto;
-  padding: 40px 0px;
+  padding: 10px;
 }
 .three-cols {
-    width: 70%;
+    width: 85%;
     margin: 0px auto;
     padding: 0px;
 }
 .Quality,.Reliability,.Convenience{
     width: 32%;
     margin: 0% 2% 0% 0%;
-    padding: 0%;
+    padding: 20px;
     float: left;
 }
 
@@ -298,7 +305,7 @@ About us
 
 .three-cols ul {
     margin: 0;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 15px 15px;
     list-style: none;
     clear: both;
     display: block;
@@ -370,10 +377,10 @@ th{
 }
 @media(max-width:1000px){
   #getting-around{
-    padding: 0 40px;
+    padding: 0 auto;
   }
   #getting-around ul.grid li{
-    flex-basis: 70%;
+    flex-basis: 90%;
     margin-bottom: 65px;
 
   }
@@ -392,8 +399,8 @@ th{
 }
 .Gallery-two-cols {
     width: 90%;
-    height: 90%
-    margin: 0px auto;
+    height: 90%;
+    margin: auto;
     padding: 0px;
 
 }
