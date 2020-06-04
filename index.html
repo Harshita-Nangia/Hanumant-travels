@@ -11,13 +11,27 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js">
     </script>
     <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery-3.4.1.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script>
       $(document).ready(function(){
         $('#mobile_icon').click(function(){
-          $('ul').toggleClass('show');
+          $('ul').toggleClass("show");
           });
       });
+      
+      $(document).ready(function(){
+    		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+    		var target = this.hash;
+    		var $target = $(target);
+
+    		$('html, body').stop().animate({
+    	        'scrollTop': $target.offset().top-100
+    		}, 900, 'swing', function () {
+    	        window.location.hash = target-100;
+    		});
+    	       });
+    });
     </script>
   </head>
   <body>
@@ -277,20 +291,6 @@
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Rudransh Srivastava, Harshita Nangia <br> It sure is fun to travel with friends and family</p>
       <p>&ldquo; We keep providing better services for customer satisfaction and happiness.&rdquo;  <br>-Rajeev nangia(Owner)</p>
     </footer>
-    <script type="text/javascript">
-    	$(document).ready(function(){
-    		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
-
-    		var target = this.hash;
-    		var $target = $(target);
-
-    		$('html, body').stop().animate({
-    	        'scrollTop': $target.offset().top-100
-    		}, 900, 'swing', function () {
-    	        window.location.hash = target-100;
-    		});
-    	       });
-    });
-    </script>
+ 
   </body>
 </html>
