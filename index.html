@@ -17,8 +17,19 @@
         $('#mobile_icon').click(function(){
           $('ul').toggleClass("show");
           });
+
+          $('#mobile_icon').click(function(){
+            $('.Cars-Image').hide();
+            $('#glimpse').hide();
+            });
+
+            $('#nav-li').click(function(){
+              $('.Cars-Image').show();
+              $('#glimpse').show();
+              $('ul').toggleClass("show");
+              });
       });
-      
+
       $(document).ready(function(){
     		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
 
@@ -40,7 +51,7 @@
      <img class="logo" src="Images/HTT_logo.png" alt="logo" width="200" height="100" >
 
 
-      <ul>
+      <ul id="nav-li">
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#abt">About Us</a></li>
         <li><a href="#gal">Gallery</a></li>
@@ -195,9 +206,9 @@
       </div>
     </div>
 
-<marquee scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();">
-  <h3 style="font-size:20px;">
-     The Glimpse of ways you can travel around with, there are many more ways of Travelling!!!
+<marquee scrollamount="10" >
+  <h3 id="glimpse" style="font-size:20px;">
+     The Glimpse of ways you can travel around with<br>there are many more ways of Travelling!!!
   </h3>
 </marquee>
     <div class="Another-gallery">
@@ -285,12 +296,12 @@
 
     <footer id="social-media" style="width:100%; height:200px;">
       <ul>
-        <li><a href="http://wa.me/9648989989"><i class="fab fa-whatsapp" ></i></a></li>
+        <li><a href="http://wa.me/+919648989989"><i class="fab fa-whatsapp" ></i></a></li>
         <li><a href="https://www.facebook.com/Rajeev.nangia.travel/"><i class="fab fa-facebook-square"></i></a></li>
       </ul>
       <p>&copy; <script>document.write(new Date().getFullYear());</script> Rudransh Srivastava, Harshita Nangia <br> It sure is fun to travel with friends and family</p>
       <p>&ldquo; We keep providing better services for customer satisfaction and happiness.&rdquo;  <br>-Rajeev nangia(Owner)</p>
     </footer>
- 
+
   </body>
 </html>
