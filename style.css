@@ -127,7 +127,7 @@ nav li, nav ul{
     background:rgb(41, 51, 66);
     top: 100px;
     left: -100%;
-    transition: all .5s;
+    transition: all .7s;
     text-align: center;
     justify-content: space-around;
   }
@@ -448,12 +448,13 @@ div.Poster{
   height: 400px;
   padding-left: 5%;
   padding-right: 5%;
+  overflow-y: hidden;
 }
 
 #img2{
   width:40%;
   height: 350px;
-
+  overflow-y: hidden;
 }
 
 /* ------------*/
